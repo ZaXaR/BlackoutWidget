@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!-- Обновлено -->
+    <TextView
+        android:id="@+id/updated_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🗓 Оновлено: 2025-11-03 00:44:05"
+        android:textColor="#AAAAAA"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Заголовок Сьогодні -->
+    <TextView
+        android:id="@+id/title_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сьогодні"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/updated_at"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Список інтервалів сьогодні -->
+    <TextView
+        android:id="@+id/today_schedule"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Завантаження..."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/title_today"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Заголовок Завтра -->
+    <TextView
+        android:id="@+id/title_tomorrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Завтра"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/today_schedule"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Список інтервалів завтра -->
+    <TextView
+        android:id="@+id/tomorrow_schedule"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#CCCCCC"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/title_tomorrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Кнопка оновлення -->
+    <ImageButton
+        android:id="@+id/refresh_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_refresh"
+        android:contentDescription="Оновити"
+        android:tint="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

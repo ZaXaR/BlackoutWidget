@@ -1,0 +1,9 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="180dp"
+    android:minHeight="60dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/blackout_schedule_widget"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen"
+    android:maxWidth="400dp"
+    android:maxHeight="200dp" />
